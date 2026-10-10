@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - Bayanihan College</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #f4f6f9; }
+        .card { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h1 { color: #003366; }
+    </style>
+</head>
+<body>
+    <h1>Enrollment Helpdesk Admin Analytics</h1>
+    <div class="card">
+        <h3>Total Questions Handled: <span id="total">0</span></h3>
+        <p>Thumbs Up: <span id="up">0</span> | Thumbs Down: <span id="down">0</span></p>
+    </div>
+    <div class="card">
+        <h3>Queries by Category</h3>
+        <pre id="intents">Loading...</pre>
+    </div>
+
+    <script>
+        async function loadStats() {
+            const res = await fetch('/api/stats');
+            const data = await res.json();
+            document.getElementById('total').textContent = data.total_questions;
+            document.getElementById('up').textContent = data.thumbs_up;
+            document.getElementById('down').textContent = data.thumbs_down;
+            document.getElementById('intents').textContent = JSON.stringify(data.intent_counts, null, 2);
+        }
+        setInterval(loadStats, 2000);
+        loadStats();
+    </script>
+</body>
+</html>
