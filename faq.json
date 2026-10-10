@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "category": "requirements",
+    "question": "What are the requirements for incoming freshmen?",
+    "answer": "Incoming freshmen must submit Form 138 (Report Card), Certificate of Good Moral Character, 2x2 ID pictures, and PSA Birth Certificate."
+  },
+  {
+    "id": 2,
+    "category": "requirements",
+    "question": "What are the requirements for transferee students?",
+    "answer": "Transferees need to submit an Transfer Credentials/Honorable Dismissal, Transcript of Records (TOR) for evaluation, Good Moral Certificate, and PSA Birth Certificate."
+  },
+  {
+    "id": 3,
+    "category": "requirements",
+    "question": "Ano ang mga kailangan para sa shiftee?",
+    "answer": "Para sa shiftee, kailangan ng Approved Change of Course Form galing sa Dean, Certificate of Grades, at clearance galing sa dating department."
+  },
+  {
+    "id": 4,
+    "category": "schedule",
+    "question": "When does enrollment for First Semester start?",
+    "answer": "Enrollment for the First Semester starts on June 15, 2026, and ends on July 30, 2026."
+  },
+  {
+    "id": 5,
+    "category": "schedule",
+    "question": "Kailan ang huling araw ng late enrollment?",
+    "answer": "Ang late enrollment ay hanggang August 15, 2026 lamang. May late registration fee na PHP 500."
+  },
+  {
+    "id": 6,
+    "category": "schedule",
+    "question": "What is the schedule for adding/dropping subjects?",
+    "answer": "Adding and dropping of subjects is open during the first two weeks of classes from August 17 to August 28, 2026."
+  },
+  {
+    "id": 7,
+    "category": "payment",
+    "question": "Can I pay tuition in installments?",
+    "answer": "Yes. Tuition can be paid in four installments: upon enrollment (downpayment), prelims, midterms, and finals."
+  },
+  {
+    "id": 8,
+    "category": "payment",
+    "question": "Ano ang mga payment channels na pwede gamitin?",
+    "answer": "Pwede magbayad sa Cashier Counter sa Campus, Landbank online deposit, GCash via Payment Portal, o Maya."
+  },
+  {
+    "id": 9,
+    "category": "payment",
+    "question": "How much is the initial downpayment upon enrollment?",
+    "answer": "The minimum downpayment required upon enrollment is PHP 3,000 for regular students."
+  },
+  {
+    "id": 10,
+    "category": "scholarship",
+    "question": "Does Bayanihan College offer academic scholarships?",
+    "answer": "Yes. Valedictorians get 100% tuition discount, Salutatorians get 50% discount, and Academic Honor Students get 25% to 50% depending on GWA."
+  },
+  {
+    "id": 11,
+    "category": "scholarship",
+    "question": "Paano mag-apply para sa CHED Tulong Dunong or TES scholarship?",
+    "answer": "Mag-submit ng DSWD Indigency Certificate, Income Tax Return ng magulang, at Student ID sa Student Affairs Office (SAO) bago mag-July 10."
+  },
+  {
+    "id": 12,
+    "category": "scholarship",
+    "question": "Are working student scholarships available?",
+    "answer": "Yes. The Student Assistant Program offers 100% tuition waiver in exchange for 20 hours of campus service per week."
+  },
+  {
+    "id": 13,
+    "category": "registrar services",
+    "question": "How can I request an official Transcript of Records (TOR)?",
+    "answer": "Submit a request form at the Registrar Window 2 or via the Online Portal, pay PHP 150 per copy, and wait 5 working days."
+  },
+  {
+    "id": 14,
+    "category": "registrar services",
+    "question": "Paano kumuha ng Certificate of Enrollment (COE)?",
+    "answer": "Pwede mag-request ng COE sa Registrar Portal pagkatapos magbayad ng downpayment. Ito ay mai-download sa PDF format within 24 hours."
+  },
+  {
+    "id": 15,
+    "category": "registrar services",
+    "question": "What are the registrar office hours during enrollment?",
+    "answer": "The Registrar's Office is open Monday to Friday, from 8:00 AM to 5:00 PM, excluding holidays."
+  }
+]

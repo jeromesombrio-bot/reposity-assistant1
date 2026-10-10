@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bayanihan College - Analytics Dashboard</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; background: #f9f9f9; }
+    .card { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    h2 { margin-bottom: 15px; color: #003366; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #003366; color: white; }
+  </style>
+</head>
+<body>
+  <h1>Enrollment Helpdesk Admin Dashboard</h1>
+  <br>
+  <div class="card">
+    <h2>Satisfaction Rating</h2>
+    <p>Positive Feedback: <b id="thumbsUp">0%</b></p>
+    <p>Total Rated Questions: <span id="totalRated">0</span> / <span id="totalQuestions">0</span></p>
+  </div>
+
+  <div class="card">
+    <h2>Questions Per Category</h2>
+    <table>
+      <thead>
+        <tr><th>Category</th><th>Count</th></tr>
+      </thead>
+      <tbody id="categoryTable"></tbody>
+    </table>
+  </div>
+
+  <script>
+    async function loadStats() {
+      const res = await fetch("/api/stats");
+      const data = await res.json();
+
+      document.getElementById("thumbsUp").innerText = data.thumbs_up_percentage + "%";
+      document.getElementById("totalRated").innerText = data.total_rated;
+      document.getElementById("totalQuestions").innerText = data.total_questions;
+
+      const tbody = document.getElementById("categoryTable");
+      tbody.innerHTML = "";
+      for (const [cat, count] of Object.entries(data.questions_per_category)) {
+        tbody.innerHTML += `<tr><td>${cat}</td><td>${count}</td></tr>`;
+      }
+    }
+    loadStats();
+    setInterval(loadStats, 5000); // Auto refresh every 5 seconds
+  </script>
+</body>
+</html>
